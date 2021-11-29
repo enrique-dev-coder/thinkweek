@@ -1,0 +1,60 @@
+@import "./variables";
+
+.container{
+  display:flex ;
+  width: 100%;
+  height:80px;
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  flex-direction: column;
+  justify-content: center;
+  .nav_container{
+    display: flex;
+    justify-content: space-between;
+    .nav_container_ul{
+      list-style: none;
+      display: flex;
+      align-self: center;
+      li{
+        color: #515151;
+        font-size: 2rem;
+        margin-right:100px; 
+        padding: 10px 15px;
+      };
+      .contact_button{
+        border: 2px solid  #515151;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .hamburguer{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .container{
+    .nav_container{
+      .nav_container_ul{
+        display: none;
+      }
+    }
+    .hamburguer{
+      width: 64px;
+      background-color: transparent;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right:25px ;
+      .hamburguer_line{
+        width: 100%;
+        background-color: $mainColor;
+        height: 8px;
+      }
+    }
+  }
+}

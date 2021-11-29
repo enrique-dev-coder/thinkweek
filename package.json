@@ -3,14 +3,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.43.4",
+    "three": "^0.135.0",
+    "vanta": "^0.5.21"
   },
   "devDependencies": {
     "eslint": "7.32.0",
