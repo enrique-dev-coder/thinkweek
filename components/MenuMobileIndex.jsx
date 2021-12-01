@@ -1,4 +1,4 @@
-import styles from "../styles/menumobile.module.scss"
+import styles from "../styles/menumobileindex.module.scss"
 import Link from "next/link"
 import useLockBodyScroll from '../helpers/use-lock-body-scroll'
 

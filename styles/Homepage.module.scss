@@ -13,6 +13,7 @@
     bottom: 24%;
     margin-right: 50px;
     font-size: 16px;
+    transition: all 30s ;
     .copy_section_modal{
       margin-top: 16px;
       border: 2px solid #555;
@@ -71,5 +72,22 @@
     bottom: 0;
     right: 46%;
 
+  }
+  .canvas_container{
+    position: absolute;
+    top: 15%;
+    z-index: 3;
+    right: 0;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .container{
+
+
+    .container_bg_1{
+      background-image: url("../public/img/citybgmobile.png");
+
+    }
   }
 }
