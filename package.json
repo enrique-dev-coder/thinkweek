@@ -8,11 +8,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^5.3.3",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "17.0.2",
     "sass": "^1.43.4",
+    "styled-components": "^5.3.3",
     "three": "^0.135.0",
     "vanta": "^0.5.21"
   },

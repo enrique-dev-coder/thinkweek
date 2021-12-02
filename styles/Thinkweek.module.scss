@@ -1,0 +1,93 @@
+@use "sass:math";
+
+.super_container{
+  background: #000000;
+  position: relative;
+  overflow-x: hidden;
+  .container{
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    .cards_wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      margin-top: 120px;
+      .container_cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }    
+    }
+    .container_services{
+      margin-top: 150px;
+      height: 100vh;
+      h2{
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+      }
+      .container_services_cards{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        z-index: 2;
+      }
+      .container_services_buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+    }
+  }
+
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
+.background span {
+  width: $particleSize;
+  height: $particleSize;
+  border-radius: $particleSize;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: $animationDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  $colors: (
+    #595260,
+    #FFCC1D,
+    #FBFF00
+  );
+  @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: math.div(random($animationDuration * 10), 10) * 1s + 10s;
+      animation-delay: math.div(random(($animationDuration + 10s) * 10), 10) * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}

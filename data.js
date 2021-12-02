@@ -176,3 +176,48 @@ export const ActuarVideos=[
   }
 
 ]
+
+export const Team=[
+  {
+    id:1,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Raquel_glbj22.png",
+    nombre:"Raquel Morano",
+    puesto:"CEO Think Week",
+    descripcion:"Transformo entidades a través de la migración digital, orientándoles en el cambio de procesos de trabajo y organizando sus    equipos, así como la integración eficaz de tecnología necesaria para ello."
+  },
+  {
+    id:2,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473968/thinkweek/team/Belen_qw98sk.png",
+    nombre:"Belén Oller ",
+    puesto:"Directora de Comunicación",
+    descripcion:"Mi camino profesional en márketing, comunicación y publicidad empezó hace más de 20 años.  Dirijo una agencia internacional de marketing y comunicación con un concepto innovador y creativo. "
+  },
+  { 
+    id:3,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Eduardo_ioqe6o.png",
+    nombre:"Eduardo Infante",
+    puesto:"Creador del método",
+    descripcion:"Escritor del bestseller internacional Filosofía en la calle y No me tapes el sol: cómo se un cínico de los buenos.Colaborador habitual en medios de comunicación que nos invita a transformarnos."
+  },
+  {
+    id:4,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Elias_rl2xj7.png",
+    nombre:"Elias Dominguez",
+    puesto:"Director de Dinámicas",
+    descripcion:"He sido parte de organización de Congresos,Presidente de varios comités científicos tanto en universidades y empresas. Y me encargo de organización de proyectos y empresas en crecimiento."
+  },
+  {
+    id:5,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Noa_hfwpgt.png",
+    nombre:"Noa Mora",
+    puesto:"Creadora Audivisual",
+    descripcion:"Me dedico a la creación audiovisual de contenido, hace 8 años. Mi máxima motivación es despertar un sentimiento en el espectador, porque para creer no hay que ver, hay que sentir."
+  },
+  {
+    id:6,
+    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Beatriz_ydvwdf.png",
+    nombre:"Beatriz Herrera",
+    puesto:"Decoradora de Interiores",
+    descripcion:"Amante de la belleza y armonía en todas sus formas, pero especializada en aplicarlas en la buena mesa y su ambiente ideal. Asesora hostelera y experta en eventos empresariales."
+  },
+]
