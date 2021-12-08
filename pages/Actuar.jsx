@@ -1,10 +1,15 @@
 import VideoLayout from "../components/VideoLayout"
 import {ActuarVideos} from "../data"
-import NavBar from "../components/NavBar"
+import NavBarIndex from "../components/NavBarIndex"
 export default function Actuar({actuarVideos}) {
   return (
     <>
-      <NavBar/>
+      <div className="navbarColor">
+        <NavBarIndex 
+          color="#FFDD00"
+            img="/img/logo.png"
+        />
+      </div>
       <main>
         <VideoLayout 
           title="ACTUAR"

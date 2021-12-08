@@ -26,16 +26,14 @@ export default function Thinkweek({TeamData}) {
           <TwCard
             backgroundimg="/img/bridgebg.jpg"
             title="¿PARA QUÉ?"
-            desc="Para promover el cambio y la innovación en las entidades, através del pensamiento y la reflexión, en la búsqueda de la generación de ideas y los
-            procesos de trabajo."
+            desc="Para promover el cambio y la innovación en las entidades, através del pensamiento y la reflexión."
           />  
           <TwCard
             backgroundimg="/img/lighthouse.jpg"
             title="¿COMO LO HACEMOS?"
             desc="Hemos diseñado una metodología
             que facilita los procesos de
-            pensamiento, para llegar a definir
-            objetivos más exitosos, basada en
+            pensamiento, basada en
             4 pilares."
           />  
         </section>

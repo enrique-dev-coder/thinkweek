@@ -7,6 +7,7 @@ const CardContainer = styled(motion.div)`
  height:500px;
  display:flex;
  flex-direction:column;
+ justify-content: flex-end;
  border-radius:25px;
  box-shadow: 0 2px 7px 1px rgba(31,31,31,.2);
  background-image: url(${props=>props.backgroundimg});
@@ -24,7 +25,7 @@ const CardTitleContainer= styled.div`
 
 `;
 const CardTitle = styled(motion.h2)`
-    font-size: 4rem;
+    font-size: 28px;
     color: white;
     margin-left: -17%;
 `;

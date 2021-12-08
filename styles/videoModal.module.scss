@@ -58,15 +58,25 @@
     }
   
   }
-  .btn{
-    border: none;
+
+ 
+  .controller_btn{
     position: absolute;
-    background: transparent;
     right: 0;
+    top: 0;
+    margin-top: 60px;
     margin-right: 24px;
-    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;        
+    .btn{
+      border: none;
+      background: transparent;
+      
+    }
   }
-  
 }
 
 @media screen  and (max-width:1024px){

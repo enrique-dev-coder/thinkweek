@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 import { useEffect } from 'react'
+import{MusicProvider}from"../context/Audiocontext"
 //el remove es para que no se carge siempre el script cuando se cargen las otras paginas
 function MyApp({ Component, pageProps }) {
   useEffect(()=>{
@@ -15,9 +16,11 @@ function MyApp({ Component, pageProps }) {
     }
   },[])
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+  <MusicProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+  </MusicProvider>
   )
   
   

@@ -1,11 +1,17 @@
 import {PensarVideos} from "../data"
 import VideoLayout from "../components/VideoLayout"
-import NavBar from "../components/NavBar"
+import NavBarIndex from "../components/NavBarIndex"
 export default function Pensar({pensarVideos}) {
  
   return (
     <>
-      <NavBar/>
+        <div className="navbarColor">
+      <NavBarIndex
+      
+      color="#FFDD00"
+        img="/img/logo.png"
+      />
+    </div>
         <main>
           <VideoLayout 
             title="PENSAR"

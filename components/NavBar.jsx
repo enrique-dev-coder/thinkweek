@@ -50,6 +50,13 @@ export default function NavBar() {
               </li>
             </a>
           </Link>
+          <Link href="/Contacto">
+            <a>
+              <li>
+              Contáctanos
+              </li>
+            </a>
+          </Link>
         </ul>
         <div className={styles.hamburguer} onClick={()=>showMobileMenu()}>
           <div className={styles.hamburguer_line}></div>

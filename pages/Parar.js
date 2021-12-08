@@ -1,11 +1,17 @@
 import VideoLayout from "../components/VideoLayout"
 import {PararVideos} from"../data"
 import Signup from "../components/Signup"
-import NavBar from "../components/NavBar"
+import NavBarIndex from "../components/NavBarIndex"
 export default function Home({videos}) {
   return (
     <>
-    <NavBar/>
+    <div className="navbarColor">
+      <NavBarIndex
+      
+      color="#FFDD00"
+        img="/img/logo.png"
+      />
+    </div>
     <main>
       <VideoLayout 
       key={videos.id}

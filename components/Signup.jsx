@@ -1,6 +1,13 @@
 import styles from "../styles/signup.module.scss"
 
 export default function Signup() {
+  const dots =(dotCount)=>{
+    const dotsArr=[]
+    for(let i= 0; i<dotCount;i++){
+      dotsArr.push(i)
+    }
+    return dotsArr
+  }
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -25,6 +32,15 @@ export default function Signup() {
         </div>
         <p>Siguiente</p>
       </div>
+        {/* funcion para crear un numero de dots para la animacion
+            Toma un  array del [1 al 100]  y eso lo mapea creando cada span en la iteracion
+          */}
+        {dots(200).map((item)=>(
+          <div className={styles.circleContainer}>
+            <div className={styles.circle} key={item}></div>
+          </div>
+        ))}
     </section>
+  
   )
 }

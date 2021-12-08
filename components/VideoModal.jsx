@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import styles from "../styles/videoModal.module.scss"
 import useLockBodyScroll from '../helpers/use-lock-body-scroll'
-
+import VolumeButton from"../components/VolumeButton"
 export default function VideoModal({titulo,lugar,descripcion,display,src,mostrarVideo,cerrarVideo}) {
   useLockBodyScroll()
   const [text,setText] = useState("none")
@@ -20,7 +20,7 @@ export default function VideoModal({titulo,lugar,descripcion,display,src,mostrar
     //
     <div 
       className={styles.superContainer}
-      style={ mostrarVideo ?  {opacity:"1",zIndex:"2"} : {opacity:"0",zIndex:"0"}}
+      style={ mostrarVideo ?  {opacity:"1",zIndex:"10"} : {opacity:"0",zIndex:"0"}}
     >
         <section  className={styles.container}>
       <video 
@@ -44,6 +44,11 @@ export default function VideoModal({titulo,lugar,descripcion,display,src,mostrar
         <p className={styles.desc} style ={{display: `${text}`}}>{descripcion}</p>
       </div>
       {/* ese boton cierra el video */}
+      <div className={styles.controller_btn}>
+        <VolumeButton 
+
+          color="white"
+        />
       <button 
         onClick={cerrarVideo}
         className={styles.btn}
@@ -51,8 +56,11 @@ export default function VideoModal({titulo,lugar,descripcion,display,src,mostrar
         <img 
           src="/img/leftArrow.png" 
           alt="regresar a la pagina principal" 
+          width= "60px"
+          height="60px"
         />
       </button>  
+      </div>
     </section>
     </div>
   
