@@ -1,5 +1,5 @@
 @use "sass:math";
-
+@import "./variables";
 .super_container{
   background: #000000;
   position: relative;
@@ -67,9 +67,9 @@ $amount: 20;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   $colors: (
-    #595260,
-    #FFCC1D,
-    #FBFF00
+    #FFFCDC,
+    #F8DF8B,
+    #FFF1AF
   );
   @for $i from 1 through $amount {
     &:nth-child(#{$i}) {

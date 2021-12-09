@@ -14,7 +14,9 @@
     "react-copy-to-clipboard": "^5.0.4",
     "react-dom": "17.0.2",
     "react-howler": "^5.2.0",
+    "react-slick": "^0.28.1",
     "sass": "^1.43.4",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "three": "^0.135.0",
     "vanta": "^0.5.21"

@@ -5,14 +5,15 @@ import styles from "../styles/Thinkweek.module.scss"
 import ServiceCard from '../components/ServiceCard'
 import Button from '../components/Button'
 import {Team} from "../data" 
-
+import ImageSlider from '../components/ImageSlider'
+import {desc} from "../components/ImageSlider"
 //para styled components usar la direccion del fondo de la imagen nomas como "/img"
 export default function Thinkweek({TeamData}) {
-  console.log(TeamData)
+
   return (
     <div className={styles.super_container}>
     <main className={styles.container}>
-      <NavBarIndex
+      <NavBarIndex 
         color="#FFDD00"
         img="/img/logo.png"
       />
@@ -94,9 +95,18 @@ export default function Thinkweek({TeamData}) {
                 />
             </div>
         </section>
-      <section className={styles.container_team_slider}>
+        <h2 style={{color:"white", textAlign:"center",fontSize:"60px"}}>
+          NUESTRO EQUIPO
+        </h2>
+
+        <div>
+          <ImageSlider
+            data={TeamData}
+          />
+        </div>
         
-      </section>  
+    
+   <desc/>
     </main>
     <div className={styles.background}>
       <span></span>

@@ -2,6 +2,8 @@ import Layout from '../components/Layout'
 import '../styles/globals.css'
 import { useEffect } from 'react'
 import{MusicProvider}from"../context/Audiocontext"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 //el remove es para que no se carge siempre el script cuando se cargen las otras paginas
 function MyApp({ Component, pageProps }) {
   useEffect(()=>{
