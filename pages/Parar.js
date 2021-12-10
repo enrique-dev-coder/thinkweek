@@ -2,6 +2,7 @@ import VideoLayout from "../components/VideoLayout"
 import {PararVideos} from"../data"
 import Signup from "../components/Signup"
 import NavBarIndex from "../components/NavBarIndex"
+import Footer from "../components/Footer"
 export default function Home({videos}) {
   return (
     <>
@@ -23,6 +24,7 @@ export default function Home({videos}) {
       />
      <Signup/>
     </main>
+    <Footer/>
     </>
   )
 }

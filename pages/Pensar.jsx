@@ -1,6 +1,7 @@
 import {PensarVideos} from "../data"
 import VideoLayout from "../components/VideoLayout"
 import NavBarIndex from "../components/NavBarIndex"
+import Footer from "../components/Footer"
 export default function Pensar({pensarVideos}) {
  
   return (
@@ -21,6 +22,7 @@ export default function Pensar({pensarVideos}) {
             right="/Actuar"
           />
         </main>
+        <Footer/>
     </>
   )
 }

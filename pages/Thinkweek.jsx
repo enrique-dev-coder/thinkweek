@@ -6,7 +6,7 @@ import ServiceCard from '../components/ServiceCard'
 import Button from '../components/Button'
 import {Team} from "../data" 
 import ImageSlider from '../components/ImageSlider'
-import {desc} from "../components/ImageSlider"
+import Footer from '../components/Footer'
 //para styled components usar la direccion del fondo de la imagen nomas como "/img"
 export default function Thinkweek({TeamData}) {
 
@@ -104,9 +104,7 @@ export default function Thinkweek({TeamData}) {
             data={TeamData}
           />
         </div>
-        
-    
-   <desc/>
+        <Footer/>
     </main>
     <div className={styles.background}>
       <span></span>

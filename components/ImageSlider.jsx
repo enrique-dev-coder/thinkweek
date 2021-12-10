@@ -8,13 +8,14 @@ export default function ImageSlider({data,imageData}) {
   const [desc,setDesc] = useState({})
 
   const singleImageData = (id)=>{
+    //encontrar un solo objeto por el id que se le pase
     const singlePerson = data.findIndex(x=>x.id===id)
     setDesc(data[singlePerson])
-    console.log(desc)
+  //  console.log(desc)
  }
  
  const objetoVacio = Object.keys(desc).length === 0 && desc.constructor === Object
- console.log(objetoVacio)
+// console.log(objetoVacio)
  
   const settings ={
   dots: false,

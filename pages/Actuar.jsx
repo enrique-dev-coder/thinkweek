@@ -1,6 +1,7 @@
 import VideoLayout from "../components/VideoLayout"
 import {ActuarVideos} from "../data"
 import NavBarIndex from "../components/NavBarIndex"
+import Footer from "../components/Footer"
 export default function Actuar({actuarVideos}) {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Actuar({actuarVideos}) {
           right="/"
         />
       </main>
+      <Footer/>
    </>
   )
 }

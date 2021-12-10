@@ -7,7 +7,7 @@ import React from 'react';
 import Canvas from "../components/Canvas";
 import * as THREE from "three";
 import AudioButton from "../components/VolumeButton";
-
+import Footer from "../components/Footer";
 export default function Home() {
   const [vantaEffect,setVantaEffect] = useState(0);
   const vantaRef = useRef(null)
@@ -67,11 +67,6 @@ export default function Home() {
             </div>
           }
           <div className={styles.container_texto} style={showElementsOnMobile ? {opacity:"1"} : {opacity:"0"}}>
-            <img
-              src="/img/borrarIcon.png"
-              width="64px"
-              height="64px"
-            />
             <p>Ayudamos a <b>personas, empresas y entidades,</b> a parar, pensar, y encontrar ideas que generen innovación.</p>
           </div>
       
@@ -92,7 +87,7 @@ export default function Home() {
       <div className={styles.container_bg_2} ref={vantaRef} >
             <div id="vantajs"></div>
       </div>
-    
+        <Footer/>
  
     </>
   )
