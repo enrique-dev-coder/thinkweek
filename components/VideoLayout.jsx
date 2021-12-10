@@ -42,7 +42,7 @@ export default function VideoLayout({videos,title, paragraph,left,right,titulo,l
               alt="" />
             </a>
           </Link>
-     
+          {/** aqui va el video contenedor */}
           <div className={styles.text_container}>
               <h1>{title}</h1>
               <p>{paragraph}</p>
@@ -59,12 +59,15 @@ export default function VideoLayout({videos,title, paragraph,left,right,titulo,l
               />  
             </a>
           </Link>
-     
+          <video className={styles.videoTitleBackground} 
+          autoPlay muted loop src="https://res.cloudinary.com/dof2dcqoe/video/upload/v1639099810/thinkweek/VIDEO_PARA_LOS_3_qxynwy.mp4">
+
+          </video>
         </div>
         {
-          videos.map((v)=>(
+          videos.map((v,i)=>(
             <>
-              <div className={styles.card}>
+              <div key={i} className={styles.card}>
                 <video 
                 key={v.id}
                 src={v.video} 

@@ -19,7 +19,7 @@
       padding-top:50px ;
       padding-bottom: 15px;
       position: relative;
-     
+      overflow: hidden;
       .left{
         position: absolute;
         left: 26.46%;
@@ -48,6 +48,15 @@
         border-radius: 10px;
         width: 80%;
         margin: 23px auto;
+      }
+      //usas el div del video donde le dices que abarque el 100% de todo tu contenedor
+      // lo haces absoluto y le das oveflowhidden al contenedor apdre para que no salga
+      .videoTitleBackground{
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: -1px;
       }
     }
     .card{
