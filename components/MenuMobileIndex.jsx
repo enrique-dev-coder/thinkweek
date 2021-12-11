@@ -6,7 +6,7 @@ export default function MenuMobile({botonesCerrar}) {
   useLockBodyScroll()
   return (
     <div className={styles.mobile_container}>
-      <Link href="/">
+      <Link href="/Parar">
         <a>
           <p onClick={botonesCerrar}>Parar</p>
         </a>
@@ -21,7 +21,11 @@ export default function MenuMobile({botonesCerrar}) {
           <p  onClick={botonesCerrar}>Actuar</p>
         </a>
       </Link>
-        <p>Think week</p>
+      <Link href="/Thinkweek">
+       <a>
+          <p  onClick={botonesCerrar}>Thinkweek</p>
+       </a>
+      </Link>
         <p>Contacto</p>
     </div>
   )

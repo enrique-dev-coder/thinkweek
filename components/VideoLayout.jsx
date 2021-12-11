@@ -66,7 +66,6 @@ export default function VideoLayout({videos,title, paragraph,left,right,titulo,l
         </div>
         {
           videos.map((v,i)=>(
-            <>
               <div key={i} className={styles.card}>
                 <video 
                 key={v.id}
@@ -79,7 +78,6 @@ export default function VideoLayout({videos,title, paragraph,left,right,titulo,l
                 onClick={()=>{appearVideo(v.id)}}
                 />
               </div>
-            </>
           ))
         }
       </div>

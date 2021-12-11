@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import {Howl, Howler} from 'howler';
-import Footer from './Footer';
+
 
 const Layout = ({children})=>{
 

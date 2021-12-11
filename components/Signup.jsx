@@ -1,8 +1,12 @@
 import styles from "../styles/signup.module.scss"
-import { useState } from "react"
+import { useState,useRef} from "react"
+import emailjs from "emailjs-com"
+
 export default function Signup() {
   //agarrar el valor del formulario del email y el nombre
  // ese estado sera pobaldo por el valor del formulario
+
+  const form = useRef();
   const [name,setName] = useState("");
   const [email,setEmail] = useState("")
   const [showStep,setShowStep]  = useState(false)
@@ -51,7 +55,17 @@ export default function Signup() {
         console.log(xhr.responseText);
       }
     }
-    //mandar la request final
+    //mandar a emailjs  
+    //el emailjs recibe los datos de la ref del form con los parametros de el servide id y el form id 
+    //los datos del correo vienen del atributo de name
+    emailjs.sendForm('service_35b26w9', 'template_l7p23zz', form.current, 'user_bPd3vNMPBqKJo3Zb9TVnY')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+    //mandar la request final a la api de hubspot
     xhr.send(final_data)
     //dejar vacio el estado que mandael form
     setName("")
@@ -70,12 +84,26 @@ export default function Signup() {
           <img src="/img/whiteLogo.png" alt="Vamos a parar" />
             <h2>¡Vamos a parar!</h2>
             <p>Vamos a empezar un autodiagnóstico personalizado</p>
-            <form onSubmit={handleSubmit} >
+            <form onSubmit={handleSubmit} ref={form} >
+            <select required name="user_pregunta1">
+              <option value="" disabled selected style={{color:"white"}}>¿Qué es lo que más te preocupa?</option>
+              <option value="Desconectar/crear algo nuevo">Desconectar/crear algo nuevo</option>
+              <option value="Proceso de cambio/transformación personal">Proceso de cambio/transformación personal</option>
+              <option value="Proceso de cambio/transformación en mi empresa">Proceso de cambio/transformación en mi empresa</option>
+              <option value="Solucionar un problema personal">Solucionar un problema personal</option>
+              <option value="Solucionar un problema empresarial">Solucionar un problema empresarial</option>
+            </select>
+            <select required name="user_pregunta2">
+              <option value="" disabled selected style={{color:"white"}} >Esta experiencia sería individual o empresarial:</option>
+              <option value="Individual">Individual</option>
+              <option value="Empresa">Empresarial</option>
+            </select>
               <input
                 type="text"
                 required
                 placeholder="Por favor escribe tu nombre"
                 value={name}  
+                name="user_name"
                 onChange={e=>setName(e.target.value)}
               />
               <input 
@@ -83,15 +111,13 @@ export default function Signup() {
                 required  
                 placeholder="Dejanos tu email para una consulta personalizada"
                 value={email}
+                name="user_email"
                 onChange={e=>setEmail(e.target.value)}
 
               />
               <button type="submit">
                 Contáctanos!
-                {/*<img 
-                  src="/img/sendArrow.png" 
-                  alt="" 
-                />*/}
+              
               </button>
               <p>Siguiente</p>
             </form>

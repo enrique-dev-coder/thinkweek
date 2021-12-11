@@ -4,7 +4,6 @@ import { useState } from "react"
 import MenuMobileIndex from "./MenuMobileIndex"
 
 export default function NavBarIndex({showElementsOnMobile,color,img}) {
-  console.log(color)
   const [mobileMenu,setMobileMenu]= useState(false)
 
   const showMobileMenu=()=>{
@@ -66,10 +65,12 @@ export default function NavBarIndex({showElementsOnMobile,color,img}) {
              showMobileMenu()
              showElementsOnMobile()
             }}
+            //cambiar el color dependiendo de que color de menu vaya a traer en la propiedad
+            style={{border:`2px solid ${color}`}}
           >
-          <div className={styles.hamburguer_line}></div>
-          <div className={styles.hamburguer_line}></div>
-          <div className={styles.hamburguer_line}></div>
+          <div className={styles.hamburguer_line} style={{backgroundColor:`${color}`}}></div>
+          <div className={styles.hamburguer_line} style={{backgroundColor:`${color}`}}></div>
+          <div className={styles.hamburguer_line} style={{backgroundColor:`${color}`}}></div>
         </div>  
         {
           mobileMenu && (
