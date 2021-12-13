@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import {motion} from "framer-motion"
 
-const ServiceCardContainer= styled(motion.div)`
- width: 285px;
+const ServiceCardContainer= styled.div`
+ width: 300px;
  height:500px;
  display:flex;
  flex-direction:column;
@@ -11,6 +11,7 @@ const ServiceCardContainer= styled(motion.div)`
  background: rgba(255,255,255,.5);
  transition: all .5s ease-in-out;
  cursor: pointer;
+ margin-left: 40px
 `;
 const ServiceCardTitle = styled.h2` 
   color:white;
@@ -30,8 +31,8 @@ const ServiceCardDesc = styled.p`
 export default function ServiceCard({servicetitle,servicedesc}) {
   return (
     <ServiceCardContainer
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+     // whileHover={{ scale: 1.1 }}
+     // whileTap={{ scale: 0.9 }}
     >
       <ServiceCardTitle>{servicetitle}</ServiceCardTitle>
       <ServiceCardDesc>{servicedesc}</ServiceCardDesc>

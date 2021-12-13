@@ -28,12 +28,18 @@ const CardTitle = styled(motion.h2)`
     font-size: 28px;
     color: white;
     margin-left: -17%;
+    @media screen and (max-width: 1200px) {
+    margin-left: 0%;
+  }
 `;
 
 const CardP= styled(motion.p)`
   font-size: 2.5rem;
   color: white;
   margin-left: -16%;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0%;
+  }
 `;
 
 export default function TwCard({backgroundimg,title,desc}) {

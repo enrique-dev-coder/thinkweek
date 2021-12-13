@@ -2,11 +2,12 @@ import React from 'react'
 import NavBarIndex from '../components/NavBarIndex'
 import TwCard from '../components/TwCard'
 import styles from "../styles/Thinkweek.module.scss"
-import ServiceCard from '../components/ServiceCard'
 import Button from '../components/Button'
 import {Team} from "../data" 
 import ImageSlider from '../components/ImageSlider'
 import Footer from '../components/Footer'
+import MobileServiceslider from '../components/MobileServiceslider'
+import MobileTwCards from '../components/MobileTwCards'
 //para styled components usar la direccion del fondo de la imagen nomas como "/img"
 export default function Thinkweek({TeamData}) {
 
@@ -17,6 +18,7 @@ export default function Thinkweek({TeamData}) {
         color="#FFDD00"
         img="/img/logo.png"
       />
+      {/**Section for desktop **/}
       <div className={styles.cards_wrapper}>
         <section className={styles.container_cards}>
           <TwCard
@@ -39,43 +41,13 @@ export default function Thinkweek({TeamData}) {
           />  
         </section>
       </div>
+          {/**Section for mobile **/}
+        <div className={styles.cardsMobile}>
+          <MobileTwCards />
+        </div>
         <section className={styles.container_services}>
             <h2>¿QUÉ OFRECEMOS?</h2>
-            <div className={styles.container_services_cards}>
-                <ServiceCard
-                  servicetitle="TIEMPO"
-                  servicedesc="Ofrecemos
-                  sesiones de 1
-                  semana (ThinkWeek) o fin
-                  de semana (ThinkWeekEnd),
-                  para enfocarnos
-                  en trabajar el
-                  insight."
-                />
-                <ServiceCard
-                  servicetitle="ENFOQUE"
-                  servicedesc="Sólo te centrarás
-                  en  una tarea, con
-                  todas las
-                   necesidades
-                  cubiertas."
-                />
-                <ServiceCard
-                  servicetitle="MÉTODO"
-                  servicedesc="Que guía
-                  a las personas en
-                  el proceso de
-                  pensar, para llegar
-                  a tener ideas de
-                  calidad y a partir
-                  de ahí trabajar en
-                  ellas."
-                />
-                <ServiceCard
-                  servicetitle="ESPACIOS"
-                  servicedesc="Exclusivos, en zonas retiradas y tranquilas, con un método adaptado a las necesidades del cliente, buscando resultados eficaces."
-                />
-            </div>
+              <MobileServiceslider/>
             <div className={styles.container_services_buttons}>
                 <Button
                   borderRadius="6px"

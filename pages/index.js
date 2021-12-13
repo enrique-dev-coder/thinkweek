@@ -7,7 +7,7 @@ import React from 'react';
 import Canvas from "../components/Canvas";
 import * as THREE from "three";
 import AudioButton from "../components/VolumeButton";
-import Footer from "../components/Footer";
+
 export default function Home() {
   const [vantaEffect,setVantaEffect] = useState(0);
   const vantaRef = useRef(null)
@@ -87,7 +87,7 @@ export default function Home() {
       <div className={styles.container_bg_2} ref={vantaRef} >
             <div id="vantajs"></div>
       </div>
-        <Footer/>
+    
  
     </>
   )

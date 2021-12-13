@@ -119,7 +119,7 @@ export default function Signup() {
                 Contáctanos!
               
               </button>
-              <p>Siguiente</p>
+
             </form>
           </>
         }

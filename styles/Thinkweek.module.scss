@@ -20,6 +20,9 @@
         flex-wrap: wrap;
       }    
     }
+    .cardsMobile{
+      display: none;
+    }
     .container_services{
       margin-top: 150px;
       height: 100vh;
@@ -90,4 +93,20 @@ $amount: 20;
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
+}
+@media screen and (max-width:1024px) {
+  .super_container{
+    .container{
+      .cards_wrapper{
+        display: none;
+
+      }
+      .cardsMobile{
+        display: block;
+      }
+   
+    }
+  
+  }
+  
 }
