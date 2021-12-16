@@ -17,6 +17,8 @@ export default function Thinkweek({TeamData}) {
       <NavBarIndex 
         color="#FFDD00"
         img="/img/logo.png"
+        background="rgba(0, 0, 0, 0.85)"
+        menuTextColor="#FFDD00"
       />
       {/**Section for desktop **/}
       <div className={styles.cards_wrapper}>

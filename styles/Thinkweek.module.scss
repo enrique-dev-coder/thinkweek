@@ -104,6 +104,19 @@ $amount: 20;
       .cardsMobile{
         display: block;
       }
+      .container_services{
+
+        .container_services_buttons{
+          display: flex;
+          justify-content: center;
+          margin-top: 10%;
+          flex-wrap: wrap;
+          button{
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+      }
    
     }
   

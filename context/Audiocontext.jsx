@@ -9,11 +9,17 @@ export const useMusic= () => useContext(MusicContext)
 
 export const MusicProvider = ({children})=>{
   const [playing,setPlaying]= useState(false)
+  const [loading,setLoading]= useState(false)
 
   const handlePlaying = ()=>{
     playing !=false ? setPlaying(false) : setPlaying(true) 
   }
-
+  const loadingSetTrue=()=>{
+    setLoading(true)
+  }
+  const loadingSetFalse=()=>{
+    setLoading(false)
+  }
   return(
     <>
       <ReactHowler
@@ -21,7 +27,7 @@ export const MusicProvider = ({children})=>{
         playing={playing}
         loop={true}
       />
-     <MusicContext.Provider value={{playing,handlePlaying}}>{children}</MusicContext.Provider>
+     <MusicContext.Provider value={{playing,handlePlaying,loading,loadingSetTrue,loadingSetFalse}}>{children}</MusicContext.Provider>
     </>
   )
 

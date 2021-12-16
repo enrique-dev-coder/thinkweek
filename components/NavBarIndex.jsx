@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useState } from "react"
 import MenuMobileIndex from "./MenuMobileIndex"
 
-export default function NavBarIndex({showElementsOnMobile,color,img}) {
+export default function NavBarIndex({showElementsOnMobile,color,img,background,menuTextColor}) {
   const [mobileMenu,setMobileMenu]= useState(false)
 
   const showMobileMenu=()=>{
@@ -76,7 +76,8 @@ export default function NavBarIndex({showElementsOnMobile,color,img}) {
           mobileMenu && (
             <MenuMobileIndex
               botonesCerrar={()=>setMobileMenu(false)}
-
+              background={background}
+              menuTextColor={menuTextColor}
             />
           )
         }

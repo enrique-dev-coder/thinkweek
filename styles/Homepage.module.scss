@@ -37,6 +37,24 @@
       }
     }
   }
+  .think{
+    position: absolute;
+    top: 25%;
+    right: 65%;
+    h1{
+      font-size: 72px;
+      color: rgba(255,255,255,.85);
+    }
+  }
+  .week{
+    position: absolute;
+    top: 28%;
+    right: 23%;
+    h1{
+      font-size: 72px;
+      color: rgba(255,255,255,.85);
+    }
+  }
   .container_texto{
     width: 24%;
     margin: -16px auto;

@@ -1,0 +1,34 @@
+$size: 10vw;
+$shadow: 35;
+$primary: white;
+$secondary: black;
+
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+    .title {
+      background: $primary;
+      color: $secondary;
+      font-family: "Montserrat", sans-serif;
+      font-size: $size;
+      letter-spacing: 1vw;
+      line-height: 30vh;
+      margin: 0;
+      mix-blend-mode: lighten;
+      text-transform: uppercase;
+      &:before {
+        color: rgb(0 0 0 / 7%);
+        content: attr(data-text);
+        //desfazas el texto
+        margin-left: -1%;
+        margin-top: -1%;
+        position: absolute;
+      }
+    } 
+}
