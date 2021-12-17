@@ -46,7 +46,7 @@ export default function NavBarIndex({showElementsOnMobile,color,img,background,m
           <Link href="/Thinkweek">
             <a>
               <li style={{color:`${color}`}}>
-                Think Week
+                THINK WEEK
               </li>
             </a>
           </Link> 

@@ -2,7 +2,7 @@ export const PararVideos=
 [
     {
       id:1,
-      video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1637608856/thinkweek/Parar/1.PARAR-20211122T183920Z-001/videos%20comprimidos/PARAR_1_m7xuje.mp4",
+      video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1639750820/thinkweek/La_aceleraci%C3%B3n_detiene_el_pensamiento_qqgxje.mp4",
       titulo:"La aceleración detiene el pensamiento",
       lugar:"Madrid, España",
       descripcion:"En la vida como en un camino incierto, es fundamental PARAR, porque si no lo hacemos, podría llevarnos a un camino peor. Es recomendable detener el ritmo, para poder ver desde otra perspectiva, o tan sólo poder pensar qué hacer. A veces hay que PARAR, para poder seguir."
@@ -44,7 +44,7 @@ export const PararVideos=
     },
     {
       id:7,
-      video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1637608832/thinkweek/Parar/1.PARAR-20211122T183920Z-001/videos%20comprimidos/PARAR_7_h8nzdp.mp4",
+      video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1639750783/thinkweek/NOCHES_DE_INSOMNIO_kghjbu.mp4",
       titulo:"Noches de insomnio",
       lugar:"California, USA",
       descripcion:"En el mundo ajetreado que vivimos no tenemos tiempo de reflexión, ni de análisis crítico. No tenemos tiempo, ni espacio para estimular el pensamiento"
@@ -67,7 +67,7 @@ export const PensarVideos=[
   },
   {
     id:2,
-    video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1637608831/thinkweek/Pensar/2.PENSAR-20211122T183941Z-001/videos%20comprimidos/PENSAR_2_bywuva.mp4",
+    video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1639750794/thinkweek/el_momento_de_alumbrar_o3vidy.mp4",
     titulo:"El momento de alumbrar",
     lugar:"Paris, Francia",
     descripcion:"Descartes dijo: “Cogito ergo sum” (Pienso luego existo); dijo esto como una declaración de que nuestra habilidad de razonar prueba que existimos. Pero Descartes, sólo tuvo la razón a medias; en lugar de “Pienso, luego existo”, la verdad es “Pienso, luego actúo” Empecemos a alumbrar"
@@ -88,7 +88,7 @@ export const PensarVideos=[
   },
   {
     id:5,
-    video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1637608836/thinkweek/Pensar/2.PENSAR-20211122T183941Z-001/videos%20comprimidos/PENSAR_5_ekqz1c.mp4",
+    video:"https://res.cloudinary.com/dof2dcqoe/video/upload/v1639750792/thinkweek/es_hora_de_pensar_yd4hl4.mp4",
     titulo:"Es hora de pensar",
     lugar:"Bogotá, Colombia",
     descripcion:"Debemos PENSAR, y pensar mejor, y más que nunca, y lo más rápido posible, porque eso marcará la diferencia de excelencia y competitividad de nuestras entidades en un mundo global y muy competitivo, además de sostenible. Por ello, debemos ayudar a las personas y a los equipos a PENSAR."
@@ -201,20 +201,13 @@ export const Team=[
   },
   {
     id:4,
-    foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Elias_rl2xj7.png",
-    nombre:"Elias Dominguez",
-    puesto:"Director de Dinámicas",
-    descripcion:"He sido parte de organización de Congresos,Presidente de varios comités científicos tanto en universidades y empresas. Y me encargo de organización de proyectos y empresas en crecimiento."
-  },
-  {
-    id:5,
     foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Noa_hfwpgt.png",
     nombre:"Noa Mora",
     puesto:"Creadora Audivisual",
     descripcion:"Me dedico a la creación audiovisual de contenido, hace 8 años. Mi máxima motivación es despertar un sentimiento en el espectador, porque para creer no hay que ver, hay que sentir."
   },
   {
-    id:6,
+    id:5,
     foto:"https://res.cloudinary.com/dof2dcqoe/image/upload/v1638473969/thinkweek/team/Beatriz_ydvwdf.png",
     nombre:"Beatriz Herrera",
     puesto:"Decoradora de Interiores",

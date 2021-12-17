@@ -17,7 +17,7 @@
 .container{
 
     width: 95%;
-    height: 90%;
+    height: 85%;
     position: relative;
     //top: -100%;
     /* left: 0; */
@@ -51,10 +51,11 @@
     }
     .desc{
       color: white;
-      background: rgba(0,0,0,.6);
-      font-size: 24px;
-      margin: 0;
-      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+      padding: 35px;
+      width: 85%;
+      margin: 0 auto;
     }
   
   }

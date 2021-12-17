@@ -25,13 +25,13 @@ export default function Thinkweek({TeamData}) {
         <section className={styles.container_cards}>
           <TwCard
             backgroundimg="/img/beachbg.jpg"
-            title="¿QUÉ HACEMOS?"
+            title="Somos una experiencia"
             desc="Ayudamos a las personas y a los equipos a pensar, reflexionar y encontrar ideas. Somos una experiencia"
           />  
           <TwCard
             backgroundimg="/img/bridgebg.jpg"
             title="¿PARA QUÉ?"
-            desc="Para promover el cambio y la innovación en las entidades, através del pensamiento y la reflexión."
+            desc="Para promover el cambio y la innovación en las entidades, a través del pensamiento y la reflexión."
           />  
           <TwCard
             backgroundimg="/img/lighthouse.jpg"

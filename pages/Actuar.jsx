@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import { useState,useEffect } from "react"
 import LoadingScreen from "../components/LoadingScreen"
 import {motion,AnimatePresence} from "framer-motion"
-
+import Signup from "../components/Signup"
 export default function Actuar({actuarVideos}) {
   const [loading,setLoading] = useState(false)
  //cambiar el estado del laoding
@@ -41,6 +41,7 @@ export default function Actuar({actuarVideos}) {
                 right="/"
               />
             </main>
+            <Signup/>
             <Footer/>
           </>
         )

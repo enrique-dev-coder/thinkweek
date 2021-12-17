@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import { useState,useEffect } from "react"
 import LoadingScreen from "../components/LoadingScreen"
 import {motion,AnimatePresence} from "framer-motion"
+import Signup from "../components/Signup"
 
 export default function Pensar({pensarVideos}) {
   const [loading,setLoading] = useState(false)
@@ -43,6 +44,7 @@ export default function Pensar({pensarVideos}) {
                 right="/Actuar"
               />
             </main>
+            <Signup/>
             <Footer/>
           </>
         )
