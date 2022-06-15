@@ -3,6 +3,7 @@ import SocialMediaMenu from './SocialMediaMenu';
 import Menu from './Menu';
 import FloatingMenuButton from '../FloatingNavbar/FloatingMenuButton';
 import NewMenu from '../NewMenu';
+import VolumeButton2 from '../VolumeButton2';
 const NavbarMobileHomePage = ({ openMenuHome }) => (
   <div className="flex  justify-between items-center right-[15%] w-[80vw] top-10 absolute lg:hidden">
     <div>
@@ -37,7 +38,10 @@ const index = () => {
           </p>
         </div>
       </div>
-      <div className="w-[30%] hidden border-l lg:flex flex-col  border-l-white">
+      <div className="w-[30%] hidden relative border-l lg:flex flex-col  border-l-white">
+        <div className="absolute bottom-0 hidden lg:block -translate-y-8 right-[6.5rem]">
+          <VolumeButton2 color="white" />
+        </div>
         <div className="w-[450px] h-[800px] absolute bottom-[60px] border-b border-b-white flex flex-col justify-end items-center  ">
           <Menu />
         </div>

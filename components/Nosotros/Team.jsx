@@ -98,7 +98,6 @@ const Team = () => {
         </div>
       </div>
       <div className="flex justify-center mb-[70px]">
-        <TransparentButton title="Ver video" />
         <SolidButton title="Contáctanos" />
       </div>
     </>

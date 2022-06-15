@@ -9,7 +9,7 @@ const NameContactForm = () => {
     let xhr = new XMLHttpRequest();
     //peticion a url  al formulario de hubspot
     let url =
-      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/0eebe4fd-d17f-4983-bbf5-7f8b96f6bd65';
+      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/fa5ace07-9190-4787-892d-0ec08b78ff72';
     //array con los valores del estado
     let data = {
       fields: [
@@ -48,13 +48,13 @@ const NameContactForm = () => {
     setEmail('');
   };
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="w-full relative">
       <h2 className=" font-bold py-10 text-grisOscuroThink text-[1.8rem]   md:text-[3rem]">
         ¡Suscríbete a nuestro newsletter!
       </h2>
       <form
         onSubmit={handleSubmit}
-        className="border border-grisOscuroThink w-full md:w-3/5 flex rounded-md"
+        className="border border-grisOscuroThink w-full md:w-[65%] flex rounded-md"
       >
         <input
           type="email"
@@ -71,9 +71,9 @@ const NameContactForm = () => {
         </button>
       </form>
       {formConfirm && (
-        <p className=" text-grisOscuroThink text-[1.6rem] mt-5">
+        <div className=" text-grisOscuroThink text-[1.6rem] mt-5">
           Gracias por suscribirte!
-        </p>
+        </div>
       )}
     </div>
   );

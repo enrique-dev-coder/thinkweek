@@ -12,6 +12,8 @@ const ChooseSection = () => {
         'Desayuno y comida incluida.',
         'Dinámica de trabajo Think Day (de dónde vengo a dónde voy).',
       ],
+      cardtext: 'Consulta fechas disponible',
+      link: 'https://thinkweek-21108231.hubspotpagebuilder.com/think-personal-sentir-0-0',
     },
     {
       title: 'Weekend',
@@ -22,6 +24,8 @@ const ChooseSection = () => {
         'Alojamiento (2 noches) en régimen todo incluido (alimentación equilibrada y sostenible).',
         'Dinámica de trabajo Think Weekend (Paro, pienso y actúo) ',
       ],
+      cardtext: 'Consulta fechas disponible',
+      link: 'https://thinkweek-21108231.hubspotpagebuilder.com/think-personal-sentir-0-0',
     },
     {
       title: 'Week ',
@@ -33,12 +37,14 @@ const ChooseSection = () => {
         'Dinámica de trabajo Think Week (Paro, pienso y actúo)',
         ' Talleres de esparcimiento (sujetos al emplazamiento escogido).',
       ],
+      cardtext: 'Consulta fechas disponible',
+      link: 'https://thinkweek-21108231.hubspotpagebuilder.com/think-personal-sentir-0-0',
     },
   ];
 
   return (
     <div className="max-w-[1143px]  xl:w-[70%] xl:min-w-[1008px] lg:w-[925px] mx-auto  ">
-      <h1 className=" text-center text-[2.3rem] my-[35px] lg:mb-[70px] font-medium text-grisOscuroThink">
+      <h1 className=" text-center text-[2.3rem] my-[35px] lg:mb-[35px] font-medium text-grisOscuroThink">
         Elige tu Plan
       </h1>
       <div className="flex   justify-between flex-col lg:flex-row items-center">
@@ -49,6 +55,8 @@ const ChooseSection = () => {
             desc={c.desc}
             color={c.color}
             features={c.features}
+            cardtext={c.cardtext}
+            link={c.link}
           />
         ))}
       </div>

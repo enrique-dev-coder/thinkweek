@@ -1,11 +1,12 @@
 import React from 'react';
-
 const ChooseCard = ({
   title,
   desc,
   color,
   features,
   isCorporatePage = false,
+  cardtext,
+  link,
 }) => {
   return (
     <div
@@ -25,12 +26,19 @@ const ChooseCard = ({
           {title}
         </h2>
         <p className="text-[1.2rem] text-center">{desc}</p>
-        <button
-          className="text-[1.4rem] py-3"
-          style={{ background: `${color}`, color: '#F5F2F0' }}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center"
         >
-          Consulta fechas Disponibles
-        </button>
+          <button
+            className="text-[1.4rem] py-3 px-3"
+            style={{ background: `${color}`, color: '#F5F2F0' }}
+          >
+            {cardtext}
+          </button>
+        </a>
         {/*Features*/}
         <div
           className={`${

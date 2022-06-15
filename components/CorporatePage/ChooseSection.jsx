@@ -12,6 +12,7 @@ const ChooseSection = () => {
         'Desayuno y comida incluida.',
         'Dinámica de trabajo Think Day (de dónde vengo a dónde voy).',
       ],
+      cardtext: 'Quiero contratarlo',
     },
     {
       title: 'Weekend',
@@ -23,6 +24,7 @@ const ChooseSection = () => {
         'Dinámica de trabajo Think Weekend (Biografía de empresa, Método de análisis Think Weekend, Plan de acción).',
         'Talleres de esparcimiento (sujetos al emplazamiento escogido).',
       ],
+      cardtext: 'Quiero contratarlo',
     },
     {
       title: 'Week ',
@@ -34,12 +36,13 @@ const ChooseSection = () => {
         'Dinámica de trabajo Think Week (Paro, pienso y actúo). Biografía de empresa, Método de análisis Think Weekend, Plan de acción',
         ' Talleres de esparcimiento (sujetos al emplazamiento escogido).',
       ],
+      cardtext: 'Quiero contratarlo',
     },
   ];
 
   return (
     <div className="max-w-[1143px]  xl:w-[70%] xl:min-w-[1008px] lg:w-[925px] mx-auto  ">
-      <h1 className=" text-center text-[2.3rem] my-[35px] lg:mb-[70px] font-medium text-grisOscuroThink">
+      <h1 className=" text-center text-[2.3rem] my-[35px] lg:mb-[35px] font-medium text-grisOscuroThink">
         Elige tu Plan
       </h1>
       <div className="flex   justify-between flex-col lg:flex-row items-center">
@@ -51,6 +54,7 @@ const ChooseSection = () => {
             color={c.color}
             features={c.features}
             isCorporatePage={true}
+            cardtext={c.cardtext}
           />
         ))}
       </div>

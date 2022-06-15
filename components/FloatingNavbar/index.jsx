@@ -11,8 +11,7 @@ const index = ({ isVideoPage = false, activeMenu }) => {
       <nav
         className={`${
           isVideoPage ? '  absolute z-20 top-12 right-[40px] ' : 'mt-10'
-        }  flex w-full mx-auto
-        max-w-[85vw] pb-[20px] lg:p-0  md:max-w-[95vw] xl:max-w-[95vw]  justify-between`}
+        }  flex w-full mx-auto  max-w-[85vw] pb-[20px] lg:p-0  md:max-w-[95vw] xl:max-w-[95vw]  justify-between`}
       >
         <Link href="/">
           <img

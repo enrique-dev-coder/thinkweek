@@ -131,3 +131,56 @@ a {
     right: -300%;
   }
 }
+
+@media (max-width: 1279px) {
+  .leftEventImg {
+    left: -35%;
+  }
+}
+@media (min-width: 1280px) {
+  .leftEventImg {
+    left: -35%;
+  }
+}
+.animationfirstcircle {
+  animation: firstcircle 2s infinite;
+
+  animation-timing-function: cubic-bezier(0, 0, 1, 2);
+}
+
+.animationsecondcircle {
+  animation: secondcircle 2s infinite;
+
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.7);
+}
+
+.animationthirdcircle {
+  animation: thirdcircle 2s infinite;
+
+  animation-timing-function: cubic-bezier(0, 0, 1, 1.5);
+}
+
+@keyframes firstcircle {
+  from {
+    top: 20px;
+  }
+  to {
+    top: 50px;
+  }
+}
+@keyframes secondcircle {
+  from {
+    top: 20px;
+  }
+  to {
+    top: 50px;
+  }
+}
+@keyframes thirdcircle {
+  from {
+    top: 20px;
+  }
+  to {
+    top: 50px;
+  }
+}

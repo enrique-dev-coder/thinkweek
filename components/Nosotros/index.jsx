@@ -28,7 +28,7 @@ const index = () => {
       <Servicios />
       <ImageRow />
       <Team />
-      <NewFooter />
+      <NewFooter isCorporatePage={false} />
     </div>
   );
 };

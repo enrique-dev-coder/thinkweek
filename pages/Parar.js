@@ -1,9 +1,10 @@
 import VideoLayout from '../components/VideoLayout';
 import { PararVideos } from '../data';
 import { useState, useEffect } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
-import { motion, AnimatePresence } from 'framer-motion';
+//import LoadingScreen from '../components/LoadingScreen';
+//import { motion, AnimatePresence } from 'framer-motion';
 import NormalPagecontainer from '../components/Wrappers/NormalPagecontainer';
+import NewLoadingScreen from '../components/NewLoadingScreen';
 export default function Home({ videos }) {
   const [loading, setLoading] = useState(false);
 
@@ -12,14 +13,12 @@ export default function Home({ videos }) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 6000);
   }, []);
   return (
-    <AnimatePresence>
+    <>
       {loading ? (
-        <motion.div key="loader">
-          <LoadingScreen />
-        </motion.div>
+        <NewLoadingScreen />
       ) : (
         <>
           <NormalPagecontainer isVideoPage={true}>
@@ -34,7 +33,7 @@ export default function Home({ videos }) {
           </NormalPagecontainer>
         </>
       )}
-    </AnimatePresence>
+    </>
   );
 }
 

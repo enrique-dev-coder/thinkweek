@@ -25,7 +25,7 @@ const index = () => {
         //parrafos={[<p key={1}>hola</p>,<p key={2}>hola</p>]}
       />
       <ChooseSection />
-      <NewFooter />
+      <NewFooter isCorporatePage={false} />
     </div>
   );
 };

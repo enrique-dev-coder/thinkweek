@@ -10,6 +10,8 @@ const Servicios = () => {
       backBgImage: "bg-[url('/img/personal.png')]",
       backTitle: 'A veces hay que PARAR, para poder seguir,',
       textBackColor: 'text-white',
+      link: 'https://thinkweek-21108231.hubspotpagebuilder.com/think-personal-sentir-0-0',
+      link2: '/plan/personal',
       backDescription:
         'Precipitarnos debido al ritmo diario, y continuar en lo mismo, nos puede ocasionar problemas mayores de los que intentamos resolver.      ',
     },
@@ -17,6 +19,8 @@ const Servicios = () => {
       id: 2,
       frontTitle: 'Corporate',
       frontBgImage: "bg-[url('/img/Corporate.png')]",
+      link: 'https://thinkweek-21108231.hubspotpagebuilder.com/think-personal-sentir-0',
+      link2: '/plan/corporate',
       frontTitleColor: 'text-amarilloThink',
       backBgImage: "bg-[url('/img/corporateback.png')]",
       backTitle: 'Cogito ergo sum Pienso, luego existo.',
@@ -28,6 +32,8 @@ const Servicios = () => {
       id: 3,
       frontTitle: 'Event',
       frontBgImage: "bg-[url('/img/Event.png')]",
+      link: '/plan/Event',
+      link2: '/plan/Event',
       frontTitleColor: 'text-white',
       backBgImage: "bg-[url('/img/eventback.png')]",
       backTitle: 'No te preguntes qué habría pasado si...',
@@ -64,6 +70,8 @@ const Servicios = () => {
             backTitle={s.backTitle}
             textBackColor={s.textBackColor}
             backDescription={s.backDescription}
+            link={s.link}
+            link2={s.link2}
           />
         ))}
       </div>

@@ -1,9 +1,11 @@
 import VideoLayout from '../components/VideoLayout';
 import { ActuarVideos } from '../data';
 import { useState, useEffect } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
-import { motion, AnimatePresence } from 'framer-motion';
+//import LoadingScreen from '../components/LoadingScreen';
+//import { motion, AnimatePresence } from 'framer-motion';
 import NormalPagecontainer from '../components/Wrappers/NormalPagecontainer';
+import NewLoadingScreen from '../components/NewLoadingScreen';
+
 export default function Actuar({ actuarVideos }) {
   const [loading, setLoading] = useState(false);
   //cambiar el estado del laoding
@@ -14,11 +16,9 @@ export default function Actuar({ actuarVideos }) {
     }, 8000);
   }, []);
   return (
-    <AnimatePresence>
+    <>
       {loading ? (
-        <motion.div key="loader">
-          <LoadingScreen />
-        </motion.div>
+        <NewLoadingScreen />
       ) : (
         <>
           <NormalPagecontainer isVideoPage={true}>
@@ -32,7 +32,7 @@ export default function Actuar({ actuarVideos }) {
           </NormalPagecontainer>
         </>
       )}
-    </AnimatePresence>
+    </>
   );
 }
 

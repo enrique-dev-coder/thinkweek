@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import VolumeButton2 from './VolumeButton2';
 import Link from 'next/link';
 //Propiedades para la clase pasar left de 100 a 60
 //100 es cuando esta oculto
@@ -53,12 +54,16 @@ const NewMenu = ({ isMenuActive, CloseMenu }) => {
     >
       <div className=" w-10/12 h-[45%]  mx-auto flex flex-col justify-between ">
         <div className=" text-white text-[3rem] w-full lg:w-1/2 flex justify-end">
-          <p className="cursor-pointer" onClick={CloseMenu}>
-            X
-          </p>
+          <VolumeButton2 color="white" />
+          <div className="cursor-pointer" onClick={CloseMenu}>
+            <img src="/img/closenewmenu.svg" width={'25px'} />
+          </div>
         </div>
         {linkMenu.map((l) => (
-          <div key={l.id} className="flex flex-col group relative">
+          <div
+            key={l.id}
+            className="flex flex-col group relative h-[50px] justify-center"
+          >
             <Link href={l.link}>
               <p className="text-white mb-5 group-hover:text-amarilloThink text-[1.6rem] lg:text-[2rem] uppercase cursor-pointer transition-all">
                 {l.title}
@@ -72,15 +77,18 @@ const NewMenu = ({ isMenuActive, CloseMenu }) => {
             ></div>
           </div>
         ))}
+        <p className="text-white   text-[1.6rem] lg:text-[2rem] uppercase cursor-pointer transition-all">
+          Servicios
+        </p>
         <div className="flex space-x-4">
           <Link href="/plan/personal">
             <p className="text-white mb-5 hover:text-amarilloThink text-[1.6rem] lg:text-[2rem] uppercase cursor-pointer transition-all">
-              Personal
+              Personal |
             </p>
           </Link>
           <Link href="/plan/Event">
             <p className="text-white mb-5 hover:text-amarilloThink text-[1.6rem] lg:text-[2rem] uppercase cursor-pointer transition-all">
-              Event
+              Event |
             </p>
           </Link>
           <Link href="/plan/corporate">

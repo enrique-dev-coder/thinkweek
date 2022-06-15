@@ -18,12 +18,12 @@ const index = () => {
           <HeaderPAgeParagraph
             key={2}
             title="¿PARA QUienes?"
-            description="Cualquier entidad de cualquier sector y tamaño, puede hacer Think Week.Se recomienda pequeños grupos de trabajo de hasta 12/15 personas."
+            description="Cualquier entidad de cualquier sector y tamaño, puede hacer Think Week. Se recomienda pequeños grupos de trabajo de hasta 12/15 personas."
           />,
         ]}
       />
       <ChooseSection />
-      <NewFooter />
+      <NewFooter isCorporatePage={true} />
     </div>
   );
 };
