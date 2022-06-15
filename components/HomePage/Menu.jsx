@@ -23,7 +23,7 @@ const Menu = () => {
     <div className=" flex  flex-col h-[70%] justify-around ">
       {menuItems.map((i) => (
         <Link href={i.link} key={i.item}>
-          <div className="relative flex items-center ">
+          <div className="relative flex items-center cursor-pointer ">
             {/*circulito*/}
             <div className=" border border-white w-[45px] h-[45px] rounded-full absolute -left-[18px] -top-[10px] "></div>
             <p className="text-white uppercase  text-3xl tracking-wider ">
